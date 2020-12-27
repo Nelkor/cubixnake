@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["dom", "esnext"],
+    "target": "es6", // ?
+    "noEmitOnError": true, // ?
+    "module": "es6", // ?
+    "moduleResolution": "node", // ?
+    "esModuleInterop": true, // ?
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@engine/*": ["./modules/engine/*"],
+      "@generator-2d/*": ["./modules/generator-2d/*"],
+      "@view-3d/*": ["./modules/view-3d/*"],
+      "@steering/*": ["./modules/steering/*"]
+    },
+    "typeRoots": [
+      "./src/declarations.d.ts"
+    ]
+  }
+}

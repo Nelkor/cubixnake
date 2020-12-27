@@ -1,0 +1,27 @@
+#preview {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #263338;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: calc(1vw + 14px);
+  box-sizing: border-box;
+  padding: 24px;
+
+  &.hidden {
+    display: none;
+  }
+
+  p {
+    text-align: center;
+
+    &.highlight {
+      color: #f57;
+      font-weight: bold;
+    }
+  }
+}

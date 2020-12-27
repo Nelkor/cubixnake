@@ -13,6 +13,8 @@
       "@engine/*": ["./modules/engine/*"],
       "@generator-2d/*": ["./modules/generator-2d/*"],
       "@view-3d/*": ["./modules/view-3d/*"],
+      "@fps-counter/*": ["./modules/fps-counter/*"],
+      "@preview/*": ["./modules/preview/*"],
       "@steering/*": ["./modules/steering/*"]
     },
     "typeRoots": [

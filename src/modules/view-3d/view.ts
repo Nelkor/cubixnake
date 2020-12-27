@@ -1,3 +1,5 @@
+import { registerFrame } from '@fps-counter/fps-counter'
+
 import { gl } from './canvas-webgl'
 import { program } from './program'
 import { strideCount, points } from './figure'
@@ -36,6 +38,7 @@ gl.vertexAttribPointer(aColor, 3, gl.FLOAT, false, stride, 6 * fSize)
 
 //
 const draw = (): void => {
+  registerFrame()
   requestAnimationFrame(draw)
 
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT)

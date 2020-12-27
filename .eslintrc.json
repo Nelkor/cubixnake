@@ -21,6 +21,7 @@
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "no-multi-spaces": "error",
+    "no-multiple-empty-lines": "error",
     "space-infix-ops": "error",
     "comma-spacing": ["error", { "before": false, "after": true }],
     "keyword-spacing": ["error", { "before": true, "after": true }],
@@ -33,6 +34,16 @@
     "array-bracket-spacing": ["error", "never"],
     "quotes": ["error", "single"],
     "max-len": ["error", { "code": 80 }],
+    "quote-props": ["error", "consistent-as-needed"],
+    "linebreak-style": ["error", "unix"],
+    "padded-blocks": ["error", "never"],
+    "padding-line-between-statements": ["error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": ["let", "const"], "next": "*" },
+      { "blankLine": "any", "prev": ["let", "const"], "next": ["let", "const"] },
+      { "blankLine": "always", "prev": ["if"], "next": ["*"] },
+      { "blankLine": "always", "prev": ["*"], "next": ["if"] }
+    ],
 
     "@typescript-eslint/no-non-null-assertion": "off"
   }

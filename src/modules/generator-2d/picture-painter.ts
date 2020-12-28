@@ -23,11 +23,11 @@ export const drawCell = (point: Point): void => {
 export const draw = (): void => {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-  ctx.fillStyle = '#666'
+  ctx.fillStyle = '#777'
 
   state.snake.forEach(drawCell)
 
-  ctx.fillStyle = '#f66'
+  ctx.fillStyle = '#3aa'
 
   drawCell(state.food)
 }

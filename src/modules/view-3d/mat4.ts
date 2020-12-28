@@ -84,8 +84,8 @@ export const createMat4 = (): Mat4 => {
 
   return {
     finalize: () => new Float32Array(value),
-    rotateX: angle => value = rotateX(value, angle),
-    rotateY: angle => value = rotateY(value, angle),
-    rotateZ: angle => value = rotateZ(value, angle),
+    rotateX: angle => (value = rotateX(value, angle)),
+    rotateY: angle => (value = rotateY(value, angle)),
+    rotateZ: angle => (value = rotateZ(value, angle)),
   }
 }
